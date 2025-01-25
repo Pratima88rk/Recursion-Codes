@@ -1,0 +1,17 @@
+// recursion
+import java.util.Scanner;
+class Main {
+    public static int sumofnaturalnum(int n,int sum){
+       while(n>0){
+           return n+sumofnaturalnum(n-1,sum);
+       }
+        return 0;
+    }
+    public static void main(String[] args) {
+        int num,add=0;
+        Scanner scano=new Scanner(System.in);
+        System.out.println("enter num");
+        num=scano.nextInt();
+       System.out.println( sumofnaturalnum(num,add));
+    
+}}
